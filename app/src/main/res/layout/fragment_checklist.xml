@@ -46,92 +46,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="20dp"
-                    app:cardBackgroundColor="@color/red_light"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="0dp"
-                    app:strokeColor="@color/red"
-                    app:strokeWidth="1dp">
+                <include layout="@layout/card_important_items" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginEnd="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:text="@string/important_items"
-                            android:textAlignment="center"
-                            android:textColor="@color/red"
-                            android:textSize="18sp" />
-
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginBottom="20dp"
-                            android:nestedScrollingEnabled="false"
-                            android:overScrollMode="never" />
-                    </LinearLayout>
-
-                </com.google.android.material.card.MaterialCardView>
-
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="20dp"
-                    app:cardBackgroundColor="@color/green_light"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="0dp"
-                    app:strokeColor="@color/green"
-                    app:strokeWidth="1dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginEnd="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:text="@string/other_items"
-                            android:textAlignment="center"
-                            android:textColor="@color/green"
-                            android:textSize="18sp" />
-
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginBottom="20dp"
-                            android:nestedScrollingEnabled="false"
-                            android:overScrollMode="never" />
-                    </LinearLayout>
-
-
-                </com.google.android.material.card.MaterialCardView>
-
+                <include layout="@layout/card_other_items" />
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
