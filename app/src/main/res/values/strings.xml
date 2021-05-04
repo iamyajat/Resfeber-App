@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TravelMate</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_checklist">Checklist</string>
+    <string name="title_profile">Profile</string>
+    <string name="important_items">Important Items</string>
+    <string name="sample_checkbox_text">Something I want</string>
+    <string name="add_a_group">Add a Group</string>
+    <string name="other_items">Other Items</string>
+    <string name="title_social">Social</string>
+    <string name="sample_dashboard_title">Yajat\'s Trip</string>
+</resources>
