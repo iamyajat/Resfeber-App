@@ -13,4 +13,5 @@
     <string name="sample_dashboard_title">Yajat\'s Trip</string>
     <string name="sample_place">Hyderabad</string>
     <string name="sample_duration">12th to 26th Sep, 2021</string>
+    <string name="sample_temp">23°C</string>
 </resources>
