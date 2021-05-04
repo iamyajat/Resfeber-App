@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TravelMate</string>
+    <string name="app_name">Resfeber</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -11,4 +11,6 @@
     <string name="other_items">Other Items</string>
     <string name="title_social">Social</string>
     <string name="sample_dashboard_title">Yajat\'s Trip</string>
+    <string name="sample_place">Hyderabad</string>
+    <string name="sample_duration">12th to 26th Sep, 2021</string>
 </resources>
