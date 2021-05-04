@@ -1,53 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardElevation="0dp"
-    app:strokeColor="@color/translucent"
-    app:strokeWidth="1dp"
-    app:cardCornerRadius="10dp">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
+    <data>
+
+        <variable
+            name="profileData"
+            type="com.yajatmalhotra.travelmate.model.ProfileData" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/hyderabad"
-        android:layout_marginBottom="50dp"/>
+        app:cardBackgroundColor="@color/red_light"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/red"
+        app:strokeWidth="1dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
-        <ImageView
-            android:id="@+id/grad"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:src="@drawable/gradient_card"
-            android:contentDescription="TODO" />
-
-        <TextView
-            android:layout_below="@id/grad"
-            android:background="@color/white"
-            android:id="@+id/location"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_bold"
-            android:text="@string/sample_place"
-            android:textAlignment="center"
-            android:textSize="24sp" />
-        <TextView
-            android:background="@color/white"
-            android:id="@+id/duration"
-            android:layout_below="@id/location"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sample_duration"
-            android:paddingBottom="10dp"
-            android:textAlignment="center"
-            android:textSize="14sp" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
 
-    </RelativeLayout>
 
-</com.google.android.material.card.MaterialCardView>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp">
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@{profileData.name}"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/red"
+                    tools:text="@string/sample_name" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location"
+                    android:paddingBottom="10dp"
+                    android:text="@{profileData.email}"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/red"
+                    tools:text="@string/sample_email" />
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/duration"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingBottom="5dp"
+                    android:text="@string/logout"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    app:drawableEndCompat="@drawable/ic_logout"
+                    app:drawableTint="@color/red" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hyderabad"
+                app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

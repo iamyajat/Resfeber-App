@@ -24,10 +24,7 @@ class SocialFragment : Fragment() {
         socialViewModel =
                 ViewModelProvider(this).get(SocialViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_social, container, false)
-        val textView: TextView = root.findViewById(R.id.text_social)
-        socialViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
         return root
     }
 }

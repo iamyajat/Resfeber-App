@@ -15,4 +15,9 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:navigationBarColor">@color/white</item>
     </style>
+
+    <style name="circleImageView" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

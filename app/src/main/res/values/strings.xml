@@ -7,7 +7,7 @@
     <string name="title_profile">Profile</string>
     <string name="important_items">Pack These First</string>
     <string name="sample_checkbox_text">Something I want</string>
-    <string name="add_a_group">Add a Group</string>
+    <string name="add_a_group">Add Group</string>
     <string name="other_items">Also Pack</string>
     <string name="title_social">Social</string>
     <string name="sample_dashboard_title">Yajat\'s Trip</string>
@@ -20,4 +20,8 @@
     <string name="sample_windspeed">12 km/h</string>
     <string name="sample_rain">50%</string>
     <string name="add_more">Add More</string>
+    <string name="logout">Logout</string>
+    <string name="sample_email">me@iamyajat.co</string>
+    <string name="sample_name">Yajat Malhotra</string>
+    <string name="title_documents">Documents</string>
 </resources>
